@@ -101,13 +101,13 @@ function randomApple(squares) {
 
 function control(e) {
     if (e.key === 'ArrowRight') {
-      direction = 1; // right
+      direction = 1; 
     } else if (e.key === 'ArrowUp') {
-      direction = -width; //if we press the up arrow, the snake will go ten divs up
+      direction = -width; 
     } else if (e.key === 'ArrowLeft') {
-      direction = -1; // left, the snake will go left one div
+      direction = -1; 
     } else if (e.key === 'ArrowDown') {
-      direction = +width; // down the snake head will instantly appear 10 divs below from the current div
+      direction = +width; 
     }
   }
 
