@@ -116,4 +116,6 @@ function replay() {
     createBoard();
     startGame();
     popup.style.display = "none";
+    score = 0;
+    scoreDisplay.textContent = score;
   }
