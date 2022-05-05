@@ -1,3 +1,8 @@
+html {
+  font-family: 'Bangers', monospace;
+}
+
+
 body {
     background: #141325;
   }
@@ -30,7 +35,7 @@ body {
   
   .snake {
     background: #67b588;
-    box-shadow: 0 0 0.5em #fffcf7;
+    box-shadow: 0 0 0.3em #fffcf7;
   }
   
   .apple {
@@ -65,36 +70,40 @@ body {
   }
   
   .top {
+    font-family: 'Bangers', monospace;
     width: 50px;
     height: 25px;
     background-color: transparent;
     color: #fffcf7;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-shadow: 0 0 0.5em currentColor;
     box-shadow: 0 0 0.5em currentColor;
   }
 
   .left {
+    font-family: 'Bangers', monospace;
     width: 50px;
     height: 25px;
     background-color: transparent;
     color: #fffcf7;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-shadow: 0 0 0.5em currentColor;
     box-shadow: 0 0 0.5em currentColor;
   }
 
   .right {
+    font-family: 'Bangers', monospace;
     width: 50px;
     height: 25px;
     background-color: transparent;
     color: #fffcf7;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-shadow: 0 0 0.5em currentColor;
     box-shadow: 0 0 0.5em currentColor;
   }
 
   .bottom {
+    font-family: 'Bangers', monospace;
     width: 50px;
     height: 25px;
     background-color: transparent;
@@ -105,6 +114,7 @@ body {
   }
   
   .playAgain {
+    font-family: 'Bangers', monospace;
     background-color: transparent;
     color: #fffcf7;
     width: 200px;
