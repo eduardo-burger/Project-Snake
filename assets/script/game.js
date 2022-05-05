@@ -34,7 +34,6 @@ function createBoard() {
 function startGame() {
     let squares = document.querySelectorAll(".grid div");
     randomApple(squares);
-    //random apple
     direction = 1;
     scoreDisplay.innerHTML = score;
     intervalTime = 1000;
@@ -47,7 +46,7 @@ function startGame() {
 function moveOutcome() {
     let squares = document.querySelectorAll(".grid div");
     if (checkForHits(squares)) {
-      alert("you hit something");
+      alert(`Game Over! Click em "OK" depois em "Reset" para continuar jogando.`);
       popup.style.display = "flex";
       return clearInterval(interval);
     } else {

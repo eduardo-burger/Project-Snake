@@ -19,11 +19,11 @@ body {
   }
   
   .snake {
-    background: blue;
+    background: green;
   }
   
   .apple {
-    background: yellow;
+    background: red;
     border-radius: 20px;
   }
   
@@ -37,4 +37,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .left-right {
+    display: flex;
   }
