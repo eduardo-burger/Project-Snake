@@ -1,5 +1,15 @@
 body {
-    background: rgb(212, 211, 211);
+    background: #141325;
+  }
+
+  h1 {
+    color: #fffcf7;
+    text-shadow: 0 0 0.5em currentColor;
+  }
+
+  .scoreDisplay {
+    color: #fffcf7;
+    text-shadow: 0 0 0.5em currentColor;
   }
   
   .grid {
@@ -14,21 +24,23 @@ body {
   .grid div {
     width: 40px;
     height: 40px;
-    border:1px black solid;
+    border:1px #65a675 solid;
     box-sizing:border-box
   }
   
   .snake {
-    background: green;
+    background: #67b588;
+    box-shadow: 0 0 0.5em #fffcf7;
   }
   
   .apple {
-    background: red;
+    background: #e72313;
     border-radius: 20px;
+    box-shadow: 0 0 0.5em #fffcf7;
   }
   
   .popup {
-    background: rgb(32, 31, 31);
+    background: #141325;
     width: 100px;
     height: 100px;
     position: fixed;
@@ -41,4 +53,63 @@ body {
 
   .left-right {
     display: flex;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 400px;
+    left: 100px;
+  }
+  
+  .top {
+    width: 50px;
+    height: 25px;
+    background-color: transparent;
+    color: #fffcf7;
+    font-size: 1.5rem;
+    text-shadow: 0 0 0.5em currentColor;
+    box-shadow: 0 0 0.5em currentColor;
+  }
+
+  .left {
+    width: 50px;
+    height: 25px;
+    background-color: transparent;
+    color: #fffcf7;
+    font-size: 1rem;
+    text-shadow: 0 0 0.5em currentColor;
+    box-shadow: 0 0 0.5em currentColor;
+  }
+
+  .right {
+    width: 50px;
+    height: 25px;
+    background-color: transparent;
+    color: #fffcf7;
+    font-size: 1rem;
+    text-shadow: 0 0 0.5em currentColor;
+    box-shadow: 0 0 0.5em currentColor;
+  }
+
+  .bottom {
+    width: 50px;
+    height: 25px;
+    background-color: transparent;
+    color: #fffcf7;
+    font-size: 1rem;
+    text-shadow: 0 0 0.5em currentColor;
+    box-shadow: 0 0 0.5em currentColor;
+  }
+  
+  .playAgain {
+    background-color: transparent;
+    color: #fffcf7;
+    width: 200px;
+    height: 100px;
+    font-size: 2rem;
+    text-shadow: 0 0 0.5em currentColor;
+    box-shadow: 0 0 0.5em currentColor;
   }

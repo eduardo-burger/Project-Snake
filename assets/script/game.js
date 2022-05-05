@@ -12,7 +12,7 @@ let appleIndex = 0;
 let currentSnake = [2, 1, 0];
 let direction = 1;
 let score = 0;
-let speed = 0.8;
+let speed = 5;
 let intervalTime = 0;
 let interval = 0;
 
@@ -36,7 +36,7 @@ function startGame() {
     randomApple(squares);
     direction = 1;
     scoreDisplay.innerHTML = score;
-    intervalTime = 1000;
+    intervalTime = 500;
     currentSnake = [2, 1, 0];
     currentIndex = 0;
     currentSnake.forEach((index) => squares[index].classList.add("snake"));
@@ -58,7 +58,6 @@ function moveSnake(squares) {
     let tail = currentSnake.pop();
     squares[tail].classList.remove("snake");
     currentSnake.unshift(currentSnake[0] + direction);
-    // movement ends here
     eatApple(squares, tail);
     squares[currentSnake[0]].classList.add("snake");
   }
@@ -85,9 +84,6 @@ function eatApple(squares, tail) {
       randomApple(squares);
       score++;
       scoreDisplay.textContent = score;
-      clearInterval(interval);
-      intervalTime = intervalTime * speed;
-      interval = setInterval(moveOutcome, intervalTime);
     }
   }
 
