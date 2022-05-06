@@ -16,6 +16,7 @@ let speed = 5;
 let intervalTime = 0;
 let interval = 0;
 
+
 document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("keydown", control);
     createBoard();
